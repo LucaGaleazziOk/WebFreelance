@@ -11,7 +11,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 html{
     font-size: 62.5%; /*hack for rem(10px)*/
@@ -20,6 +19,7 @@ body{
     font-size: 16px; /* 1rem = 10px */
     background-color: var(--second);
     color: var(--text);
+    height: max-content;
 }
 .sombra{
     -webkit-box-shadow: 4px 4px 33px 4px rgba(251,111,36,0.9);
@@ -27,6 +27,9 @@ body{
     box-shadow: 4px 4px 33px 4px rgba(251,111,36,0.9);
 }
 /*Typography*/
+*{
+    font-family: 'Kanit', sans-serif;
+}
 h1{
     font-size: 3.5rem;
 }
@@ -63,7 +66,6 @@ header{
 }
 header h1{
     font-size: 4rem;
-    font-family: sans-serif;
     margin: 1.5rem 0;
 }
 header h1 span{
@@ -378,8 +380,9 @@ main{
 /*Footer*/
 footer{
     margin-top: 3rem;
+    padding: .3rem;
     width: 100%;
-    height: 2rem;
+    height: max-content;
     background-color: var(--first);
     border-top: var(--border);
     text-align: center;
