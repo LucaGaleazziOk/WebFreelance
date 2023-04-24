@@ -100,7 +100,7 @@
     <section class="contact">
         <div class="form-container">
             <h2>Contactame</h2>
-            <form class="form" name="contact" netlify>
+            <form action="https://formspree.io/f/mnqylojj" method="post" class="form" name="contact" netlify>
                 <fieldset>
                     <legend>
                        Contactame llenando el formulario 
@@ -108,7 +108,7 @@
                     <div class="camp-container">
                         <div class="camp">
                             <label>Nombre</label>
-                            <input type="text" placeholder="Nombre" name="name">
+                            <input type="text" placeholder="Nombre" name="name" required>
                         </div>
                         <div class="camp">
                             <label>Telefono</label>
@@ -116,11 +116,11 @@
                         </div>
                         <div class="camp">
                             <label>Email</label>
-                            <input type="email" placeholder="E-Mail" name="email">
+                            <input type="email" placeholder="E-Mail" name="email"required>
                         </div>
                         <div class="msg camp">
                             <label>Mensaje</label>
-                            <textarea placeholder="Mensaje" name="message"></textarea>
+                            <textarea placeholder="Mensaje" name="message" required></textarea>
                         </div>
                     </div>
                     <div class="btn-container flex to-end-mx">
